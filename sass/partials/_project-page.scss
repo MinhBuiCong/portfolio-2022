@@ -1,0 +1,104 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1140px;
+  padding-bottom: 100px;
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+    .project-card {
+      box-shadow: $box-shadow-card;
+      padding: 20px;
+      margin: 20px;
+      width: 800px;
+      cursor: pointer;
+      .project-top {
+        display: flex;
+        justify-content: space-between;
+        width: 760px;
+        padding-top: 10px;
+        .project-name {
+          width: fit-content;
+          padding-left: 10px;
+        }
+        .name-0 {
+          color: $tekshop-color;
+        }
+        .name-1 {
+          color: $pillow-color;
+        }
+        .name-2 {
+          color: $yay-color;
+        }
+        .name-3 {
+          color: $techblog-color;
+        }
+        .name-4 {
+          color: $csm-color;
+        }
+        .project-launch {
+          width: fit-content;
+          padding-right: 10px;
+        }
+      }
+      .project-description {
+        width: fit-content;
+        padding: 10px;
+      }
+    }
+    .project-card:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and(max-width: 880px) {
+  .projects-container {
+    padding-bottom: 2.5rem;
+    .project-link {
+      .project-card {
+        padding: 1rem;
+        margin: 1rem;
+        width: 600px;
+        .project-top {
+          width: 580px;
+          .project-name {
+            font-size: $mobile-header-text;
+          }
+          .project-launch {
+            font-size: $mobile-third;
+          }
+        }
+        .project-description {
+          font-size: $mobile-third;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 640px) {
+  .projects-container {
+    .project-link {
+      .project-card {
+        width: 400px;
+        .project-top {
+          width: 380px;
+          flex-direction: column;
+          .project-name {
+            font-size: $mobile-header-text;
+            margin-bottom: 0.5rem;
+          }
+          .project-launch {
+            font-size: $mobile-third;
+            padding-left: 10px;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
