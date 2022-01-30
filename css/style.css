@@ -244,7 +244,7 @@ main .card .page-link-container .links:hover {
 
 @media screen and (max-width: 640px) {
   .skills-container .skill-card {
-    width: 400px;
+    width: 380px;
   }
 }
 
@@ -342,6 +342,12 @@ main .card .page-link-container .links:hover {
 @media screen and (max-width: 880px) {
   .projects-container {
     padding-bottom: 2.5rem;
+    max-width: 600px;
+  }
+  .projects-container .project-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .projects-container .project-link .project-card {
     padding: 1rem;
@@ -363,11 +369,22 @@ main .card .page-link-container .links:hover {
 }
 
 @media screen and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  .projects-container {
+    max-width: 400px;
+  }
+  .projects-container .project-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .projects-container .project-link .project-card {
-    width: 400px;
+    width: 350px;
   }
   .projects-container .project-link .project-card .project-top {
-    width: 380px;
+    width: 330px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -466,13 +483,21 @@ main .card .page-link-container .links:hover {
   .project-detail-container .section .project-list-name {
     font-size: 28px;
     width: 200px;
+    margin-left: 20px;
   }
   .project-detail-container .section .list-container {
-    width: 400px;
+    width: 250px;
     margin: 0px 20px;
   }
   .project-detail-container .section .list-container li {
-    width: 400px;
+    width: 250px;
+    margin-left: 20px;
+  }
+  .project-detail-container .section span {
+    margin-left: 20px;
+  }
+  .project-detail-container .section a {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

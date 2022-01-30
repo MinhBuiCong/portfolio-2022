@@ -58,13 +58,21 @@
       .project-list-name {
         font-size: $mobile-header-text;
         width: 200px;
+        margin-left: 20px;
       }
       .list-container {
-        width: 400px;
+        width: 250px;
         margin: 0px 20px;
         li {
-          width: 400px;
+          width: 250px;
+          margin-left: 20px;
         }
+      }
+      span {
+        margin-left: 20px;
+      }
+      a {
+        margin-left: 20px;
       }
     }
   }

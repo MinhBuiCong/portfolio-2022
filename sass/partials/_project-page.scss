@@ -58,7 +58,9 @@
 @media screen and(max-width: 880px) {
   .projects-container {
     padding-bottom: 2.5rem;
+    max-width: 600px;
     .project-link {
+      width: fit-content;
       .project-card {
         padding: 1rem;
         margin: 1rem;
@@ -80,12 +82,17 @@
   }
 }
 @media screen and(max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
   .projects-container {
+    max-width: 400px;
     .project-link {
+      width: fit-content;
       .project-card {
-        width: 400px;
+        width: 350px;
         .project-top {
-          width: 380px;
+          width: 330px;
           flex-direction: column;
           .project-name {
             font-size: $mobile-header-text;
